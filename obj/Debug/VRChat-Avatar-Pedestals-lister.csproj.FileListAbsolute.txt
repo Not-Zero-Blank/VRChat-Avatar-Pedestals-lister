@@ -1,0 +1,15 @@
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Newtonsoft.Json.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppNewtonsoft.Json.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppSystem.Core.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppSystem.Collections.Immutable.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppSystem.Buffers.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppMono.Security.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Il2CppSystem.Configuration.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\MelonLoader.xml
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\obj\Debug\VRChat-Avatar-Pedestals-lister.csproj.AssemblyReference.cache
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\obj\Debug\VRChat-Avatar-Pedestals-lister.csproj.CoreCompileInputs.cache
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\obj\Debug\VRChat-Avatar-Pedestals-lister.csproj.CopyComplete
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Avatar-Pedestals-lister.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\bin\Debug\Avatar-Pedestals-lister.pdb
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\obj\Debug\Avatar-Pedestals-lister.dll
+C:\Users\TGF\Documents\GitHub\VRChat-Avatar-Pedestals-lister\obj\Debug\Avatar-Pedestals-lister.pdb
