@@ -79,5 +79,6 @@ internal static class ConfigManager
 /// </summary>
 public class Config
 {
-    public bool Debug;
+    public bool Debug = false;
+    public bool ClearListOnWorldChange = true;
 }
