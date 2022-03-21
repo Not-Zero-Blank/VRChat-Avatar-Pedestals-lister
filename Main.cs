@@ -59,7 +59,7 @@ public class Menu : ModMenu
         {
             Clear(true);
         });
-        utils.AddButton("Clear\nHistory", "Will Clear the list on world change if enabled", delegate ()
+        utils.AddButton("Clear\nHistory\nOnWorldChange", "Will Clear the list on world change if enabled", delegate ()
         {
             if (config.ClearListOnWorldChange)
             {
