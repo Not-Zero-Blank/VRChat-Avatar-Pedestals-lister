@@ -8,7 +8,6 @@ using System.Diagnostics;
 using System.Net;
 using UnityEngine;
 using UnityEngine.UI;
-using static ConfigManager;
 
 public class Main : MelonLoader.MelonMod
 {
@@ -29,11 +28,6 @@ public class Main : MelonLoader.MelonMod
             MelonCoroutines.Start(_instance.ScanForAP());
         }
     }
-    public override void OnApplicationQuit()
-    {
-        Process.GetCurrentProcess().Kill();
-    }
-
     private void HandleException(object sender, UnhandledExceptionEventArgs e)
     {
         Logs.Error(e.ExceptionObject.ToString());
@@ -41,6 +35,8 @@ public class Main : MelonLoader.MelonMod
 }
 public class Menu : ModMenu
 {
+    static bool ClearListOnWorldChange = true;
+    static bool Debug = false;
     public override string MenuName => Main.Name;
     public Menu()
     {
@@ -61,37 +57,37 @@ public class Menu : ModMenu
         });
         utils.AddButton("Clear\nHistory\nOnWorldChange", "Will Clear the list on world change if enabled", delegate ()
         {
-            if (config.ClearListOnWorldChange)
+            if (ClearListOnWorldChange)
             {
-                config.ClearListOnWorldChange = false;
+                ClearListOnWorldChange = false;
                 Logs.Text("History Disabled");
             }
             else
             {
-                config.ClearListOnWorldChange = true;
+                ClearListOnWorldChange = true;
                 Logs.Text("History Enabled");
             }
         });
         utils.AddButton("Debug\nMode", "Will print out more Informations in the Console", delegate ()
         {
-            if (config.Debug)
+            if (Debug)
             {
-                config.Debug = false;
+                Debug = false;
                 Logs.Text("Debug Disabled");
             }
             else
             {
-                config.Debug = true;
+                Debug = true;
                 Logs.Text("Debug Enabled");
             }
         });
-        var category = MyModMenu.AddMenuCategory("Avatar Pedestals Found in Current World");
-        APFoundButtons = category;
+        var categorys = MyModMenu.AddMenuCategory("Avatar Pedestals Found in Current World");
+        APFoundButtons = categorys;
         MelonCoroutines.Start(ScanForAP());
     }
     public void Clear(bool force = false)
     {
-        if (force || config.ClearListOnWorldChange)
+        if (force || ClearListOnWorldChange)
         {
             foreach (GameObject a in Buttons)
             {
